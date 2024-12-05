@@ -1,0 +1,111 @@
+body {
+  margin: auto;
+  padding: 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+.name-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.logo {
+  width: 60px;
+  margin-left: auto;
+}
+
+.name-container h2 {
+  margin-bottom: 5px;
+}
+
+.name-container p {
+  margin-top: 0;
+}
+
+.mini-links {
+  border: 1px solid black;
+  margin-right: 580px;
+}
+.information-container {
+  border: 1px solid black;
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+}
+.text {
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+  border: 1px solid black;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 60px;
+  margin-right: auto;
+}
+
+.text-content h3 {
+  margin-bottom: 5px;
+}
+
+.text-content p {
+  margin-top: 0;
+}
+
+.about-me {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.about-me img {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.education-info,
+.personal-info {
+  border: 1px solid black;
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.personal-info {
+}
+
+.button {
+  margin-left: auto;
+  background: linear-gradient(to bottom, #ffffff, #e6e6e6); /* light gradient */
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.6),
+    /* inner glow */ 0 4px 6px rgba(0, 0, 0, 0.1); /* outer shadow */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5); /* dept of text */
+}
