@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff8dc;
+  color: black;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: end;
+  margin-top: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.collaborations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.colab-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+}
