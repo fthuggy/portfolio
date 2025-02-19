@@ -7,78 +7,171 @@ body {
   color: black;
 }
 
-section {
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 0;
+  width: 200px;
+}
+
+li a {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li a:hover {
+  background-color: #000;
+  color: white;
+  margin-left: 5px;
+  transition: color 0.5s ease, text-decoration 0.5s ease;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  margin-top: 100px;
+  /*margin-bottom: 10vh;*/
 }
-
 h1 {
-  font-size: 7rem;
-  font-weight: 400;
-  margin: 0;
+  font-size: 5rem;
+}
+.role {
+  margin-top: -70px;
+  margin-left: 260px;
+  margin-bottom: 50vh;
 }
 
-p {
-  font-size: 1rem;
-  margin-top: 10px;
-  text-align: end;
-  margin-top: 5px;
-}
-
-h2 {
-  text-align: center;
-}
-
-.projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.collaborations {
+.info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  text-align: start;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  margin-bottom: 50vh;
+}
+
+section#my-work {
   text-align: center;
+  padding: 40px 0;
+}
+
+.portfolio h2,
+.collaborations h2 {
+  margin-bottom: 20px;
+}
+
+.projects,
+.colab-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project,
+.colab {
+  width: 250px;
+  max-width: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  -webkit-box-shadow: 5px 5px 46px 8px rgba(0, 0, 0, 0.41);
+  box-shadow: 5px 5px 46px 8px rgba(0, 0, 0, 0.41);
+  p {
+    text-align: start;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects,
+  .colab-container {
+    flex-direction: column;
+  }
+
+  .project,
+  .colab {
+    max-width: 100%;
+  }
+}
+
+.project img,
+.colab img {
+  width: 70%;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.project {
+  margin-bottom: 50px;
 }
 
 .colab-container {
+  margin-bottom: 50vh;
+}
+
+.git-logo,
+.link-logo {
+  width: 30px !important;
+  height: auto !important;
+  margin-left: 5px;
+}
+
+#contact-me {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  margin-bottom: 30vh;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 60px;
 }
 
-.hide {
-  opacity: 0;
-  transition: all 1s;
-  transform: translateX(100%);
+.contact h2,
+.contact p {
+  margin-bottom: 10px;
 }
 
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+.contact a {
+  margin: 0 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 footer {
-  background-color: black;
-  color: white;
-  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
